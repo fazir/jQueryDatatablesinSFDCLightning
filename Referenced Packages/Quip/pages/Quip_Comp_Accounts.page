@@ -1,3 +1,0 @@
-<apex:page standardController="Account" cache="false" showHeader="false" sidebar="false" standardStylesheets="false">
-    <c:Quip_VFComponent />
-</apex:page>
