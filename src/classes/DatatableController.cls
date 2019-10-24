@@ -2,6 +2,6 @@ public class DatatableController {
        @AuraEnabled
        public static List<Account> getCases() {
            
-           return [SELECT Id ,Name FROM Account limit 100];
+           return [SELECT Id ,Name,AccountNumber,Phone FROM Account limit 100];
        }   
     }
