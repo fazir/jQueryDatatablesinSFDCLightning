@@ -1,0 +1,33 @@
+<!-- eventWithData.html -->
+<template>
+        <lightning-card title="EventWithData" icon-name="custom:custom9">
+            <lightning-layout>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-3">
+                        <lightning-layout-item>
+                            <template if:true={listIsNotEmpty}>
+                                <template for:each={contacts.data} for:item="contact">
+                                    <c-contact-list-item key={contact.Id} contact={contact} onselected={contactSelected}></c-contact-list-item>
+                                </template>
+</template>
+</lightning-layout-item>
+</div>
+<div class="slds-col slds-size_2-of-3">
+    <lightning-layout-item>
+        <template if:true={selectedContact}>
+                                <img src={selectedContact.Picture__c} height="800" width="650"></img>
+                                <p>{selectedContact.Name}</p>
+                                <p>{selectedContact.Title}</p>
+                                <p>
+                                    <lightning-formatted-phone value={selectedContact.Phone}></lightning-formatted-phone>
+                                </p>
+                                <p>
+                                    <lightning-formatted-email value={selectedContact.Email}></lightning-formatted-email>
+                                </p>
+                            </template>
+    </lightning-layout-item>
+</div>
+</div>
+</lightning-layout>
+</lightning-card>
+</template>

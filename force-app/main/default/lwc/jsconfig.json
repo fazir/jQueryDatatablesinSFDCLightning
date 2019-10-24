@@ -1,0 +1,59 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/contactListItem": [
+                "contactListItem/contactListItem.js"
+            ],
+            "c/eventWithData": [
+                "eventWithData/eventWithData.js"
+            ],
+            "c/lWC_CustomSettings": [
+                "lWC_CustomSettings/lWC_CustomSettings.js"
+            ],
+            "c/lWC_HelloWorld": [
+                "lWC_HelloWorld/lWC_HelloWorld.js"
+            ],
+            "c/lWC_lightningNavigation": [
+                "lWC_lightningNavigation/lWC_lightningNavigation.js"
+            ],
+            "c/libsD3": [
+                "libsD3/libsD3.js"
+            ],
+            "c/lwc_configurator": [
+                "lwc_configurator/lwc_configurator.js"
+            ],
+            "c/lwc_getCurrentIds": [
+                "lwc_getCurrentIds/lwc_getCurrentIds.js"
+            ],
+            "c/lwc_showLRFRecord": [
+                "lwc_showLRFRecord/lwc_showLRFRecord.js"
+            ],
+            "c/lwc_takeUserInput": [
+                "lwc_takeUserInput/lwc_takeUserInput.js"
+            ],
+            "c/lwcapp": [
+                "lwcapp/lwcapp.js"
+            ],
+            "c/showContactsWMF": [
+                "showContactsWMF/showContactsWMF.js"
+            ],
+            "c/todoApp": [
+                "todoApp/todoApp.js"
+            ],
+            "c/todoItem": [
+                "todoItem/todoItem.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}
